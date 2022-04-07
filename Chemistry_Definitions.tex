@@ -1,0 +1,35 @@
+\usepackage[version=4]{mhchem}  % for setting chemical formula with \ce{}
+\usepackage{siunitx}					% for instance, \SI{0.1}{\nm} and \num{2}
+\DeclareSIUnit \molar {\mole\per\cubic\deci\metre}
+\DeclareSIUnit \Molar {\textsc{m}}
+\DeclareSIUnit \G {G_0}
+\DeclareSIUnit \angstrom {\textsc{\AA}}
+
+\usepackage{chemmacros}				%this is for \iupac{} chemical names
+\usepackage{chemfig}
+\setchemfig{atom sep = 0.8 em}
+\setchemfig{bond offset = 0 em}
+\setchemfig{bond style={line width=1pt}}
+
+% chemicals
+\newcommand{\SAc}{\iupac{thio|acet|ate}}
+\newcommand{\ope}{\iupac{oli|go-phen|ylene ethyn|ylene}}
+\newcommand{\OPE}{\iupac{Oli|go-phen|ylene ethyn|ylene}}
+\newcommand{\odt}{\iupac{oct|ane|di|thiol}}
+\newcommand{\ODT}{\iupac{Oct|ane|di|thiol}}
+\newcommand{\aDT}{\iupac{alk|ane|di|thiol}}
+\newcommand{\ADT}{\iupac{Alk|ane|di|thiol}}
+\newcommand{\bpy}{\iupac{4,4'-bi|pyri|dine}}
+\newcommand{\pyr}{\iupac{pyri|dine}}
+\newcommand{\thf}{\iupac{tetra|hydro|furan}}
+\newcommand{\drawOPE}{\chemfig{HS-*6(-=-(-~-*6(-=-(-~-*6(-=-(-SH)=-=))=-=))=-=)}}
+\newcommand{\drawBPY}{\chemfig{[:-30]N*6(-=-(-*6(-=-N=-=))=-=)}}
+\newcommand{\drawODT}{\chemfig{HS-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]SH}}
+\newcommand{\silane}{\iupac{sil|ane|di|thio|methyl}}
+\newcommand{\Silane}{\iupac{Sil|ane|di|thio|methyl}}
+\newcommand{\SH}{\iupac{thi|ol}}
+\newcommand{\NHH}{\iupac{am|ine}}
+\newcommand{\alkane}{\iupac{alk|ane}}
+\newcommand{\Alkane}{\iupac{Alk|ane}}
+\newcommand{\ferrocene}{\iupac{fe|rroc|ene}}
+\newcommand{\metalorganic}{\iupac{me|tal|or|gan|ic}}
